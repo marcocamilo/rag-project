@@ -1,0 +1,22 @@
+---
+title: "Retrieval-Augmented Generation (RAG)"
+format: 
+  html:
+    code-fold: true
+jupyter: python3
+execute: 
+  cache: true
+---
+
+# What is RAG? An Overview
+- RAG systems leverage external knowledge sources to enhance the accuracy, relevance, and coherence of generated text, addressing the limitations of purely parametric memory in traditional language models. ([Lewis et al., 2020](https://arxiv.org/pdf/2005.11401))
+
+![](https://arxiv.org/html/2312.10997v5/extracted/2312.10997v5/images/RAG_case.png)
+
+- Component of a RAG System:
+  * **Retrieval**: searches through vast knowledge bases to identify the most pertinent information based on the input query or context.
+    + *sparse retrieval*: utilizes inverted indexes and term-based matching.
+    + *dense retrieval*: employs dense vector representations.
+    + *semantic similarity*: employed to optimize the retrieval process.
+  * **Generation**: combines the query and the retrieved context into a coherent and fluent response.
+
